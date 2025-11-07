@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
+const path = require("path");
 
 const nextConfig: NextConfig = {
   typedRoutes: true,
+  turbopack: {
+    root: path.join(__dirname, ".."),
+  },
   experimental: {
-    devtoolSegmentExplorer: true,
     typedEnv: true,
     serverActions: {
       bodySizeLimit: "10mb",
