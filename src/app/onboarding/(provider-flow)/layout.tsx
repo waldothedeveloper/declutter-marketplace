@@ -3,6 +3,8 @@ import Link from "next/link";
 import { OnboardingProgress } from "../onboarding-progress";
 import logo from "@/images/tidy-logo-no-bg.png";
 
+export const dynamic = "force-dynamic";
+
 export default async function OnboardingLayoutProviderFlow({
   children,
 }: {
